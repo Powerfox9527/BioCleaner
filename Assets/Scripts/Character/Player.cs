@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public float HP = 100.0f;
     public float Attack = 10.0f;
     public float Defense = 5.0f;
+    public float AbsorbRadius = 20.0f;
     #endregion
 
     // Start is called before the first frame update
