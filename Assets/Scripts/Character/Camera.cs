@@ -15,6 +15,7 @@ public class Camera : MonoBehaviour
     Vector2 velocity;
     Transform Character;
     #endregion
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,7 @@ public class Camera : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         Vector2 mouseVelocity = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y")) * Sensitivity;
         frameVelocity = Vector2.Lerp(frameVelocity, mouseVelocity, 1 / Smooth);
