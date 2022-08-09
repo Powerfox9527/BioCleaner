@@ -53,9 +53,15 @@
     <UnityVersion>2020.3.25f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Character\Player.cs" />
     <Compile Include="Assets\Scripts\Character\Camera.cs" />
+    <Compile Include="Assets\Scripts\Gun\Bullet.cs" />
+    <Compile Include="Assets\Scripts\Character\Player.cs" />
     <Compile Include="Assets\Scripts\Character\Movement.cs" />
+    <Compile Include="Assets\Animator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\SimpleApocalypse\_Materials\UnlitVertexColour_Alpha.shader" />
+    <None Include="Assets\SimpleApocalypse\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

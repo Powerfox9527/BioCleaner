@@ -20,7 +20,7 @@ public class Camera : MonoBehaviour
     void Start()
     {
         Character = transform.parent;
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     // Update is called once per frame
@@ -29,7 +29,7 @@ public class Camera : MonoBehaviour
         Vector2 mouseVelocity = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y")) * Sensitivity;
         frameVelocity = Vector2.Lerp(frameVelocity, mouseVelocity, 1 / Smooth);
         velocity += frameVelocity;
-        velocity.y = Mathf.Clamp(velocity.y, -90, 90);
+        velocity.y = Mathf.Clamp(velocity.y, -70, 70);
 
         // Rotate camera up-down and controller left-right from velocity.
         transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
