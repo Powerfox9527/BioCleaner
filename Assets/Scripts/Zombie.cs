@@ -9,12 +9,15 @@ public class Zombie : MonoBehaviour, Damageable
     public float HP = 100.0f;
     public float Speed = 2.0f;
     public CharacterController controller;
+    public Animator animator;
+    [Header("Audio")]
     public AudioSource audioSource;
     public AudioClip hitClip;
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame

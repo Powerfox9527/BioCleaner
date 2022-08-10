@@ -436,6 +436,9 @@ MonoBehaviour:
   HP: 100
   Speed: 2
   controller: {fileID: 0}
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
+  hitClip: {fileID: 0}
 --- !u!143 &7917877181011035976
 CharacterController:
   m_ObjectHideFlags: 0
@@ -448,7 +451,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 3
-  m_Radius: 0.5
+  m_Radius: 0.7
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
